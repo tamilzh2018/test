@@ -1,0 +1,4 @@
+**/node_modules
+**/.env
+**/build
+//These entries ensure that the node_modules, .env, and build folders are excluded from being pushed to GitHub
