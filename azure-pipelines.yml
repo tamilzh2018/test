@@ -16,6 +16,6 @@ steps:
     echo "Template expression: ${{ variables.variable1 }}"
     echo "Macro variable: $(variable1)"
     echo "Runtime expression: $[variables.variable1]"
-    echo java --version
-    echo mvn --version
+    java --version
+    mvn --version
   displayName: 'Variables Demo'
