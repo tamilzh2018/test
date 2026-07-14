@@ -19,3 +19,6 @@ steps:
     java --version
     mvn --version
   displayName: 'Variables Demo'
+
+- script: whoami
+  displayName: Agent identity
