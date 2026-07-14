@@ -1,0 +1,24 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+variables:
+  variable1: 'one'
+pool: SelfHostedAgent
+  # vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    #template expression
+    echo 'variable1.${{ variable1 }}'
+    #macro variable evaluate at run time
+    echo '${variable1}'
+    # runtime variables
+    echo 'runtime - $[variable.variable1]'
+  displayName: 'VaraiblesDemo'
