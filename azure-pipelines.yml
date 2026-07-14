@@ -5,7 +5,7 @@ variables:
   variable1: 'one'
 
 pool:
-  name: SelfHostedAgent
+  name: Default
   # vmImage: 'ubuntu-latest'
 
 steps:
